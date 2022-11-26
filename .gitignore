@@ -19,8 +19,6 @@ public_html/app/uploads/*
 public_html/app/cache
 
 # Theme
-public_html/app/themes/wptuto/dist/*
-!public_html/app/themes/wptuto/dist/*.md
 public_html/app/themes/wptuto/node_modules
 
 # WordPress
