@@ -1,0 +1,40 @@
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/grid";
+@import "partials/fonts";
+
+/* -------------------------------
+   LOGIN PAGE
+   --
+   Mobile First !
+------------------------------- */
+
+
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+}

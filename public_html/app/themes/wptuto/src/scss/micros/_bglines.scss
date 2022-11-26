@@ -1,0 +1,98 @@
+/* -------------------------------
+   BG LINES COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-bglines-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.cbo-bglines {
+  position: absolute;
+  width: 100%;
+  max-width: 120rem;
+  top: -2.5rem;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    left: -150%;
+    top: 0;
+  }
+
+  .bglines-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $colorgreydark;
+    transform-origin: left;
+    transition: transform 2s $easeinout;
+
+    &.anim-custom-effect {
+      transform: scaleX(0);
+    }
+  }
+}
+
+.cbo-bgwhite .cbo-bglines {
+  .bglines-effect {
+    background: $colorwhite;
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-bglines {
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-bglines {
+    top: -5.1rem;
+    bottom: -5.1rem;
+
+    img {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-bglines {
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-bglines {
+  }
+}

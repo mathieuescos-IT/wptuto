@@ -1,0 +1,74 @@
+/* -------------------------------
+   BREADCRUMBS COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-breadcrumbs.cbo-container {
+  display: block;
+  color: $colorgrey;
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  margin-left: -0.35rem;
+
+  a {
+    color: $colorgrey;
+    text-decoration: none;
+    margin: 0 0.35rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .breadcrumb_last {
+    font-weight: normal;
+    color: $colorwhite;
+    margin-left: 0.35rem;
+  }
+}
+
+.cbo-bgwhite .cbo-breadcrumbs.cbo-container {
+  .breadcrumb_last {
+    color: $colorgreymedium;
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-breadcrumbs.cbo-container {
+    font-size: 0.875rem;
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-breadcrumbs {
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-breadcrumbs {
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-breadcrumbs {
+  }
+}

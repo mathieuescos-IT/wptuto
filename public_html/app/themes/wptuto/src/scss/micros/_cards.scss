@@ -1,0 +1,334 @@
+/* -------------------------------
+   CARDS COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-cards {
+  .cards-el {
+    margin-bottom: 1.25rem;
+
+    .el-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      background: $colorgreymedium;
+      border-radius: 0.25rem;
+      overflow: hidden;
+      color: $colorwhite;
+      text-decoration: none;
+      padding: 2rem;
+      min-height: 100%;
+    }
+
+    .el-background {
+      position:absolute;
+      top:0; left:0;
+      width: 100%;
+      height: 100%;
+      transform:scaleY(0);
+      transform-origin:bottom;
+      transition:transform .5s $easeinout;
+    }
+
+    .el-icon{
+      transition:filter .4s;
+    }
+
+    .el-cover{
+      position:absolute;
+      top:0; left:0;
+      width: 100%;
+      height: 100%;
+      background-color:$colorgreymedium;
+      background-size:cover;
+      background-position:center;
+      background-blend-mode: multiply, luminosity;
+
+      img{
+        transition: opacity .4s;
+        opacity:0;
+      }
+
+      &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0; left: 0;
+        background:$colorgreydarker;
+        opacity: 0;
+        transition:opacity .4s;
+      }
+    }
+
+    .el-category{
+      position:relative;
+      transition:all .4s;
+    }
+
+    .el-picture{
+      position:absolute;
+      height:15rem;
+      top:5rem;
+      left:2rem;
+      right:2rem;
+      transition:all .4s $easeinout;
+    }
+
+    .el-content {
+      position:relative;
+      min-height:16.0000rem;
+      margin-top:2rem;
+      flex-grow: 1;
+      transition:all .4s $easeinout;
+    }
+
+    .el-covercontent{
+      position: absolute;
+      left: 2rem;
+      right: 2rem;
+      bottom: 2rem;
+      min-height: auto;
+
+      .covercontent-excerpt{
+        display: block;
+        max-height:0;
+        overflow: hidden;
+        transition: all .4s $easeinout;
+      }
+    }
+
+    .el-switchcontent{
+      position:relative;
+      display: block;
+      flex-grow: 1;
+      width: 100%;
+      min-height: 12rem;
+
+      .switchcontent-title{
+        transition: all .4s;
+      }
+
+      .switchcontent-excerpt{
+        position: absolute;
+        top:0; left: 0;
+        width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(1rem);
+        transition: all .4s $easeinout;
+      }
+    }
+
+    .el-buttons{
+      display: flex;
+      justify-content: flex-start;
+      margin-top:2rem;
+      position:relative;
+
+      .cbo-button{
+        margin-right:1.1250rem;
+        min-width: 3.1250rem;
+
+        &:not(.button--dark){
+          color:$colorwhite !important;
+        }
+
+        .button-icon{
+          display: inline-block;
+          position: absolute;
+          transition: opacity .2s linear .4s;
+        }
+
+        .button-hover{
+          display: inline-block;
+          overflow: hidden;
+          position: relative;
+          white-space: nowrap;
+          max-width: 0;
+          transition: all .4s $easeout;
+        }
+      }
+    }
+
+    &:hover,
+    &.el--hoversticky{
+      .el-background{
+        transform:scaleY(1);
+      }
+    }
+
+    &.el--hover{
+      .el-picture{
+        opacity:1;
+        transform: scale(0.999999);
+      }
+
+      .el-content{
+        opacity:0;
+        transform: scale(0.9);
+      }
+
+      &:hover{
+        .el-cover{
+          img{
+            opacity:1;
+          }
+
+          &:after{
+            opacity:0.3;
+          }
+        }
+
+        .el-picture{
+          opacity:0;
+          transform: scale(0.9);
+        }
+
+        .el-content{
+          opacity:1;
+          transform: scale(0.999999);
+        }
+
+        .el-covercontent{
+          .covercontent-excerpt{
+            max-height:6.2500rem;
+          }
+        }
+
+        .el-switchcontent{
+          .switchcontent-title{
+            opacity: 0;
+          }
+
+          .switchcontent-excerpt{
+            opacity: 1;
+            transform: none;
+          }
+        }
+
+        .el-icon.icon--hoverdark{
+          filter: brightness(0%);
+        }
+
+        .el-hoverdark{
+          color:$colorgreydark !important;
+        }
+
+        .el-buttons{
+          .cbo-button{
+            .button-icon{
+              max-width: 0;
+              opacity: 0;
+              transition-delay: 0s;
+            }
+
+            .button-hover{
+              max-width:15rem;
+              transition-duration: 1.2s;
+            }
+
+            &.button--hoverdark{
+              color:$colorgreydark !important;
+              border-color:$colorgreydark;
+            }
+          }
+        }
+      }
+    }
+
+    &.el--hoversticky{
+      .el-icon.icon--hoverdark{
+        filter: brightness(0%);
+      }
+
+      .el-content{
+        opacity:1;
+        transform: scale(0.999999);
+      }
+
+      .el-switchcontent{
+        .switchcontent-title{
+          opacity: 1 !important;
+        }
+
+        .switchcontent-excerpt{
+          display: none;
+        }
+      }
+
+      .el-hoverdark{
+        color:$colorgreydark !important;
+      }
+
+      .el-buttons{
+        .cbo-button{
+          &.button--hoverdark{
+            color:$colorgreydark !important;
+            border-color:$colorgreydark;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-cards {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 -0.625rem;
+
+    .cards-el {
+      margin: 0;
+      padding: 0.625rem;
+      width: 50%;
+    }
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-cards {
+    .cards-el {
+      width: 33.3333%;
+
+      .el-buttons{
+        .cbo-button:not(.button--dark):hover{
+          background:$colorwhite;
+          color:$colorgreymedium !important;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-cards {
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-cards {
+  }
+}

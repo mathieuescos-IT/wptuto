@@ -1,0 +1,86 @@
+/******************************************************************
+Author: David Essayan
+Stylesheet dedicated to Gutenberg preview
+******************************************************************/
+
+/*********************
+IMPORTING FONTS & VARS
+*********************/
+
+@import "partials/fonts";
+@import "partials/variables";
+@import "./iconfont";
+
+/*********************
+GUTENBERG OVERLOAD
+*********************/
+
+/* Common blocks styles */
+
+.wp-block {
+  font-family: $fontprimary;
+  color:$colorgrey;
+  font-size: 16px;
+}
+
+/* Common blocks width */
+
+.wp-block,
+.wp-block[data-align="wide"],
+.wp-block[data-align="full"] {
+  max-width:none;
+  margin:0;
+}
+
+/* Width of blocks (desktop preview only) */
+
+.is-desktop-preview .wp-block,
+.is-desktop-preview .wp-block[data-align="wide"],
+.is-desktop-preview .wp-block[data-align="full"] {
+  max-width: 90%;
+}
+
+/* Post title style */
+
+.edit-post-visual-editor__post-title-wrapper {
+  margin-top: 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  .editor-post-title{
+    margin:0;
+    font-size: 1.75em;
+    font-weight: 500;
+    padding: 1.5rem;
+  }
+}
+
+/* Page insert button */
+
+.block-list-appender{
+  padding:1rem 1.5rem;
+}
+
+
+
+/*********************
+GUTENBERG BLOCKS
+*********************/
+
+html :where(.editor-styles-wrapper),
+.editor-styles-wrapper{
+  padding:0;
+
+  /*********************
+  IMPORTING PARTIALS
+  *********************/
+
+  @import "partials/normalize";
+  @import "partials/grid";
+
+  /*********************
+  IMPORTING COMPONENTS
+  *********************/
+
+  @import "micros/**/*.scss";
+  @import "../../templates/**/*.scss";
+}

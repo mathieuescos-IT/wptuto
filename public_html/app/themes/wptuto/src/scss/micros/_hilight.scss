@@ -1,0 +1,76 @@
+.cbo-hilight,
+.mce-content-body .cbo-hilight {
+  background: $colorwhite;
+  color: $colorgreydark;
+
+  &.hilight--green {
+    background: $colorgreen;
+    color: $colorgreymedium;
+  }
+
+  &.hilight--blue {
+    background: $colorblue;
+    color: $colorgreymedium;
+  }
+
+  &.hilight--red {
+    background: $colorred;
+    color: $colorwhite;
+  }
+
+  &.hilight--purple {
+    background: $colorpurple;
+    color: $colorwhite;
+  }
+
+  &.hilight--grey {
+    background: $colorgreymedium;
+    color: $colorgrey;
+  }
+
+  &.hilight--static,
+  &.hilight--done {
+    background:none;
+
+    span {
+      position: relative;
+      transform: translateZ(1px);
+      background: none;
+      display: inline-block !important;
+      overflow: visible !important;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -0.25em;
+        right: -0.25em;
+        top: 0;
+        height: 100%;
+        background: url(../../library/images/hilight-white.svg) no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+    }
+
+    &.hilight--green span:before {
+      background-image: url(../../library/images/hilight-green.svg);
+    }
+
+    &.hilight--blue span:before {
+      background-image: url(../../library/images/hilight-blue.svg);
+    }
+
+    &.hilight--red span:before {
+      background-image: url(../../library/images/hilight-red.svg);
+    }
+
+    &.hilight--purple span:before {
+      background-image: url(../../library/images/hilight-purple.svg);
+    }
+
+    &.hilight--grey span:before {
+      background-image: url(../../library/images/hilight-grey.svg);
+    }
+  }
+}

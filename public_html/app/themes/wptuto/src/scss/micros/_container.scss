@@ -1,0 +1,138 @@
+/* -------------------------------
+   CONTAINER COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+$widthnormal : 100rem;
+$widthsmall : 75rem;
+$widthxsmall : 60rem;
+
+.cbo-container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 5rem auto;
+  max-width: $widthnormal;
+  position: relative;
+
+  &.container--full {
+    max-width: none;
+  }
+
+  &.container--small {
+    max-width: $widthsmall;
+  }
+
+  &.container--xsmall {
+    max-width: $widthxsmall;
+  }
+
+  &.container--padding {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &.container--nomargin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.cbo-margincontainer {
+  margin: 5rem 0;
+}
+
+.cbo-semicontainer {
+  width: calc(100% - 1rem);
+  max-width: calc(50% + ($widthnormal / 2));
+  margin: 5rem 0;
+
+  .semicontainer-half {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+
+  &.semicontainer--reverse {
+    margin-left: auto;
+    right: 0;
+    left: auto;
+
+    .semicontainer-half {
+      padding-left: 0;
+      padding-right: 1rem;
+    }
+  }
+
+  &.semicontainer--small{
+    max-width: calc(50% + ($widthsmall / 2));
+  }
+
+  &.semicontainer--xsmall{
+    max-width: calc(50% + ($widthxsmall / 2));
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-container {
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-container {
+    padding: 0 5rem;
+    margin: 10rem auto;
+
+    &.container--padding {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+  }
+
+  .cbo-margincontainer {
+    margin: 10rem 0;
+  }
+
+  .cbo-semicontainer {
+    width: calc(100%);
+    margin: 10rem 0;
+    padding:0 5rem 0 0;
+
+    .semicontainer-half {
+      width: calc(50% - 2.5rem);
+      min-width: calc(50% - 2.5rem);
+
+      &.half--inside {
+        width: calc(100% - 2.5rem);
+        min-width: calc(100% - 2.5rem);
+      }
+    }
+
+    &.semicontainer--reverse {
+      padding:0 0 0 5rem;
+    }
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+}

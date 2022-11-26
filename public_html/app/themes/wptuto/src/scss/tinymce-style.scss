@@ -1,0 +1,26 @@
+/******************************************************************
+Author: David Essayan
+Stylesheet dedicated to TinyMCE styles
+******************************************************************/
+
+  /*********************
+  IMPORTING PARTIALS
+  *********************/
+
+  @import "partials/fonts";
+  @import "partials/variables";
+  @import "partials/normalize";
+  @import "partials/grid";
+
+  /*********************
+  IMPORTING ICONFONT
+  *********************/
+
+  @import "./iconfont";
+
+  /*********************
+  IMPORTING COMPONENTS
+  *********************/
+
+  @import "structure/base";
+  @import "micros/**/*.scss";

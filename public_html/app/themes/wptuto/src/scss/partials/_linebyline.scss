@@ -1,0 +1,43 @@
+body.body--linebyline {
+  .cbo-linebyline {
+    h3 {
+      line-height: 1.33em;
+    }
+
+    .line {
+      overflow: hidden;
+
+      .line-inner {
+        display: block;
+        opacity: 0;
+        transform: translateY(50%) rotate(0deg);
+        transform-origin: top center;
+        transition: transform 1.4s $easeinout2, opacity 0.4s linear 0.5s;
+
+        hr {
+          opacity: 0;
+          transition: opacity 0.8s linear 1s;
+        }
+
+        .line {
+          display: inline;
+        }
+
+        .line-inner {
+          display: inline;
+        }
+      }
+
+      &.line--reveal {
+        .line-inner {
+          opacity: 1;
+          transform: translateY(0.01px) rotate(0);
+
+          hr {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

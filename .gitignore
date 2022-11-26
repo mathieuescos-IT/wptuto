@@ -1,0 +1,40 @@
+# Editor
+.idea*
+.DS_*
+._DS_*
+._.*
+
+*.sql
+
+# Application
+public_html/.well-known/*
+public_html/app/plugins/*
+!public_html/app/plugins/.gitkeep
+public_html/app/mu-plugins/*/
+public_html/app/upgrade
+public_html/app/languages
+public_html/app/uploads/*
+!public_html/app/uploads/.gitkeep
+
+public_html/app/cache
+
+# Theme
+public_html/app/themes/wptuto/dist/*
+!public_html/app/themes/wptuto/dist/*.md
+public_html/app/themes/wptuto/node_modules
+
+# WordPress
+public_html/wp
+public_html/.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+
+# Test dev
+dev/*

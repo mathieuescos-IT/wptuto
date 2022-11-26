@@ -1,0 +1,83 @@
+.color--blue {
+  color: $colorblue !important;
+}
+
+.color--purple {
+  color: $colorpurple !important;
+}
+
+.color--red {
+  color: $colorred !important;
+}
+
+.color--green {
+  color: $colorgreen !important;
+}
+
+.background--blue {
+  background: $colorblue !important;
+  color:$colorgreymedium !important;
+}
+
+.background--purple {
+  background: $colorpurple !important;
+}
+
+.background--red {
+  background: $colorred !important;
+}
+
+.background--green {
+  background: $colorgreen !important;
+  color:$colorgreymedium !important;
+}
+
+.background--white {
+  background: $colorwhite !important;
+}
+
+.border--blue {
+  border-color: $colorblue !important;
+}
+
+.border--purple {
+  border-color: $colorpurple !important;
+}
+
+.border--red {
+  border-color: $colorred !important;
+}
+
+.border--green {
+  border-color: $colorgreen !important;
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .hovercolor--blue:hover {
+    .hovercolor-child {
+      color: $colorblue !important;
+    }
+  }
+
+  .hovercolor--purple:hover {
+    .hovercolor-child {
+      color: $colorpurple !important;
+    }
+  }
+
+  .hovercolor--red:hover {
+    .hovercolor-child {
+      color: $colorred !important;
+    }
+  }
+
+  .hovercolor--green:hover {
+    .hovercolor-child {
+      color: $colorgreen !important;
+    }
+  }
+}

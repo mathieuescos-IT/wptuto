@@ -1,0 +1,38 @@
+/******************************************************************
+Author: David Essayan
+Stylesheet dedicated to front-end styles
+******************************************************************/
+
+/*********************
+IMPORTING PARTIALS
+*********************/
+
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/grid";
+@import "partials/fonts";
+@import "partials/scrolleffects";
+@import "partials/linebyline";
+@import "partials/owlcarousel";
+
+/*********************
+IMPORTING ICONFONT
+*********************/
+
+@import "./iconfont";
+
+/*********************
+IMPORTING COMPONENTS
+*********************/
+
+@import "structure/**/*.scss";
+@import "micros/**/*.scss";
+@import "../../templates/**/*.scss";
+
+/*********************
+PRINT STYLESHEET
+*********************/
+
+@media print {
+  @import "partials/print";
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="SVGDoc"
+   width="512"
+   height="512"
+   version="1.1"
+   viewBox="0 0 512 512"
+   sodipodi:docname="icon-play.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata17">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1080"
+     inkscape:window-height="1883"
+     id="namedview15"
+     showgrid="false"
+     inkscape:zoom="0.17383042"
+     inkscape:cx="39.198469"
+     inkscape:cy="-2410.1792"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SVGDoc" />
+  <defs
+     id="defs2" />
+  <desc
+     id="desc4">Generated with Avocode.</desc>
+  <g
+     id="g12"
+     transform="matrix(17.363876,0,0,17.363876,32.015282,-4.4562691)"
+     style="fill:#000000">
+    <g
+       id="g10"
+       style="fill:#000000">
+      <title
+         id="title6">Icon awesome-play</title>
+      <path
+         d="m 24.44056,12.61905 v 0 L 4.16941,0.63488 C 2.52238,-0.33837 0,0.60609 0,3.01328 v 23.96257 c 0,2.15957 2.34385,3.46107 4.16941,2.37841 L 24.44056,17.37585 c 1.80828,-1.06539 1.81404,-3.69142 0,-4.75681 z"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-opacity:1" />
+    </g>
+  </g>
+</svg>

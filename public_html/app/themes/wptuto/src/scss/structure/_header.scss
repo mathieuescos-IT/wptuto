@@ -1,0 +1,152 @@
+/* -------------------------------
+   HEADER COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: $colorgreydark;
+  border-bottom:2px solid $colorgreyxmedium;
+
+  .header-inner.cbo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 6.2500rem;
+  }
+
+  .header-logo {
+    position: relative;
+    z-index: 1001;
+    display: block;
+    text-decoration: none;
+    width: 7.5000rem;
+    min-width: 7.5000rem;
+    margin-bottom: 0.61rem;
+    transition: transform 0.5s $easeinout2;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .header-burger {
+    position: relative;
+    background: none;
+    border: none;
+    width: 1.3125rem;
+    height: 1.3125rem;
+    cursor: pointer;
+    z-index: 1001;
+
+    span,
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 2px;
+      width: 1.3125rem;
+      background: $colorwhite;
+      margin-left: -0.6562rem;
+      margin-top: -1px;
+      transition: all 0.5s $easeinout2;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      width:0.6875rem;
+    }
+
+    &:before {
+      margin-top: -10px;
+    }
+
+    &:after {
+      margin-top: 8px;
+      margin-left: 0;
+    }
+  }
+}
+
+body.admin-bar .cbo-header{
+  top:2rem;
+}
+
+body.body--scroll .cbo-header {
+}
+
+body.body--nav .cbo-header {
+  .header-burger {
+    span {
+      transform: scaleX(0);
+    }
+
+    &:before {
+      margin-top: -1px;
+      margin-left:-0.6562rem;
+      transform: rotate(-45deg);
+      width:100%;
+    }
+
+    &:after {
+      margin-top: -1px;
+      margin-left:-0.6562rem;
+      transform: rotate(45deg);
+      width:100%;
+    }
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-header {
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-header {
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-header {
+    .header-burger{
+      display: none;
+    }
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-header {
+  }
+}

@@ -1,0 +1,73 @@
+html,
+body {
+  background: $colorgreydark;
+  color: $colorgrey;
+  font-family: $fontprimary;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.cbo-global {
+  padding-top: 6.25rem;
+}
+
+.cbo-main {
+  position: relative;
+  padding: 1px 0;
+  margin: -1px 0;
+}
+
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &.loaded {
+    opacity: 1;
+  }
+}
+
+#wpadminbar {
+  position: fixed !important;
+}
+
+body.admin-bar {
+  .cbo-global {
+    padding-top: 8.25rem;
+  }
+}
+
+/* -------------------------------
+   XS SCREENS ONLY
+------------------------------- */
+
+@media (max-width: $screen-xs-max) {
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+}
+
+/* -------------------------------$
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+}

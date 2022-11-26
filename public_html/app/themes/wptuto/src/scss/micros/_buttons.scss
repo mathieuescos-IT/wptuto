@@ -1,0 +1,253 @@
+/* -------------------------------
+   BUTTON COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  padding: 0 1rem;
+  border-radius: 0;
+  border: 1px solid $colorwhite;
+  background: transparent;
+  color: $colorwhite;
+  font-size: 1rem;
+  line-height: 1.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.4s $easeinout;
+
+  .icon {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    font-size: 1.1875rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.button--borderthick {
+    border-width: 2px;
+  }
+
+  &.button--dark {
+    border-color: $colorgreymedium;
+    color: $colorgreymedium;
+  }
+
+  &.button--green {
+    border-color: $colorgreen;
+  }
+
+  &.button--red {
+    border-color: $colorred;
+  }
+
+  &.button--blue {
+    border-color: $colorblue;
+  }
+
+  &.button--purple {
+    border-color: $colorpurple;
+  }
+}
+
+.cbo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  text-decoration: none !important;
+  background: none;
+  border: none;
+  color: $colorwhite !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+  line-height: 1em;
+  font-weight: 400;
+  height: 3.4375rem;
+  cursor: pointer;
+  transform: translateZ(1px);
+
+  &:before {
+    content: "\ea01";
+    font-size: 1.0625rem;
+    font-family: iconfont;
+    margin: 0 0.5625rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $colorgrey;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.4s $easeinout;
+  }
+
+  &.link--active {
+    &:after {
+      height: 100%;
+      transform: scaleX(1.1);
+    }
+  }
+}
+
+.cbo-linkdl {
+  display: inline-block;
+  position: relative;
+  color: $colorwhite;
+  text-decoration: none !important;
+  white-space: nowrap;
+  padding: 0.25rem;
+  transition: color 0.4s;
+  transform: translateZ(1px);
+
+  &:before {
+    content: "\ea05";
+    font-size: 1.25rem;
+    font-family: iconfont;
+    margin: 0 0.5625rem 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -0.25em;
+    right: -0.25em;
+    top: 0;
+    height: 100%;
+    background: url(../../library/images/hilight-white.svg) no-repeat;
+    background-size: 100% 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s $easeinout2;
+    z-index: -1;
+  }
+}
+
+.cbo-bgwhite {
+  .cbo-button {
+    color: $colorgreymedium;
+  }
+
+  .cbo-link {
+    color: $colorgreymedium !important;
+  }
+
+  .cbo-linkdl {
+    &:after {
+      background-image: url(../../library/images/hilight-grey.svg);
+    }
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-button {
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-button {
+    transition: all 0.4s;
+
+    &:hover {
+      color: $colorgreymedium;
+      background: $colorwhite;
+    }
+
+    &.button--dark:hover {
+      color: $colorwhite;
+      background: $colorgreymedium;
+    }
+
+    &.button--green:hover {
+      color: $colorgreymedium;
+      background: $colorgreen;
+    }
+
+    &.button--red:hover {
+      color: $colorwhite;
+      background: $colorred;
+    }
+
+    &.button--blue:hover {
+      color: $colorgreymedium;
+      background: $colorblue;
+    }
+
+    &.button--purple:hover {
+      color: $colorwhite;
+      background: $colorpurple;
+    }
+  }
+
+  .cbo-link {
+    &:hover {
+      &:after {
+        height: 100%;
+        transform: scaleX(1.1);
+      }
+    }
+  }
+
+  .cbo-linkdl {
+    &:hover {
+      color: $colorgreydarker !important;
+
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  .cbo-bgwhite {
+    .cbo-linkdl {
+      &:hover {
+        color: $colorwhite !important;
+      }
+    }
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-button {
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-button {
+  }
+}

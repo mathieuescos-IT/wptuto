@@ -1,0 +1,211 @@
+/* -------------------------------
+   FOOTER COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-footer {
+  position: relative;
+  z-index: 2;
+  border-top: 2px solid $colorgreyxmedium;
+  background: $colorgreydark;
+
+  .footer-inner.cbo-container {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-nav {
+    ul,
+    li {
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      li {
+        margin: 1.25rem 0;
+
+        a {
+          font-size: 1rem;
+          color: $colorwhite;
+          text-decoration: none;
+        }
+
+        &.ot-sdk-show-settings a {
+          color: $colorwhite;
+          cursor: pointer;
+        }
+      }
+    }
+
+    & > ul {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & > li {
+        width: 48%;
+        padding-top: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+
+        &.nav-coords {
+          color: $colorwhite;
+          font-size: 1rem;
+          line-height: 1.5em;
+          padding-top: 0;
+        }
+
+        .nav-social {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 1.5rem;
+
+          a {
+            display: inline-block;
+            font-size: 1.125rem;
+            margin-right: 1.5rem;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            .icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 1em;
+              height: 1em;
+            }
+
+            .icon-twitter {
+              font-size: 1.25rem;
+            }
+
+            .icon-youtube {
+              font-size: 1.5rem;
+            }
+          }
+        }
+
+        &.color--blue,
+        &.color--purple,
+        &.color--red,
+        &.color--green {
+          & > a {
+            color: inherit;
+          }
+        }
+
+        & > .sub-menu {
+          margin-top: 2rem;
+        }
+
+        & > a {
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 0.08em;
+        }
+      }
+    }
+  }
+
+  .footer-annex {
+    background: rgba($colorblack, 0.15);
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 1rem 1.5rem;
+
+    ul,
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul {
+      li {
+        display: inline;
+        margin: 0 0.5rem;
+
+        a {
+          color: $colorgreyxlight !important;
+          border: none !important;
+          padding: 0 !important;
+          font-size: 1em !important;
+          line-height: 1.2em !important;
+          transition: none !important;
+          text-decoration: none;
+
+          &:hover {
+            background: none !important;
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-footer {
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-footer {
+    .footer-nav {
+      & > ul > li {
+        width: 23%;
+
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .nav-social {
+          a {
+            margin-right: 1.875rem;
+            transition: color 0.5s $easeinout;
+
+            &:hover {
+              text-decoration: none;
+              color: $colorblue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-footer {
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-footer {
+  }
+}

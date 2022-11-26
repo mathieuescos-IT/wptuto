@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/wp-content/themes/birdz/library/fonts/Rubik-Bold.woff2') format('woff2'),
+        url('/wp-content/themes/birdz/library/fonts/Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/wp-content/themes/birdz/library/fonts/Rubik-ExtraBold.woff2') format('woff2'),
+        url('/wp-content/themes/birdz/library/fonts/Rubik-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/wp-content/themes/birdz/library/fonts/Rubik-Light.woff2') format('woff2'),
+        url('/wp-content/themes/birdz/library/fonts/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/wp-content/themes/birdz/library/fonts/Rubik-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/birdz/library/fonts/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

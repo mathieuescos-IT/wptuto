@@ -1,0 +1,105 @@
+/******************************************************************
+Author: David Essayan
+******************************************************************/
+
+body.body--scrolleffects {
+  .slide-up,
+  .slide-down,
+  .slide-left,
+  .slide-right,
+  .scale-up,
+  .scale-down {
+    opacity: 0 !important;
+    transition: opacity 0.75s linear 0.25s, transform 1s $easeinout2;
+
+    &.no-opacity {
+      opacity: 1 !important;
+    }
+  }
+
+  .scale-left,
+  .scale-right {
+    transition: transform 0.5s $easeinout2;
+  }
+
+  .slide-left-margin,
+  .slide-right-margin {
+    opacity: 0 !important;
+    transition: opacity 0.75s linear 0.25s, margin 1s $easeinout2;
+
+    &.no-opacity {
+      opacity: 1 !important;
+    }
+  }
+
+  .scale-up,
+  .scale-down {
+    transition: opacity 0.75s linear 0.25s, transform 1s $easeinout2;
+  }
+
+  .slide-up {
+    transform: translateY(2rem) scale(1);
+  }
+
+  .slide-down {
+    transform: translateY(-2rem) scale(1);
+  }
+
+  .slide-left {
+    transform: translateX(4rem);
+  }
+
+  .slide-right {
+    transform: translateX(-4rem);
+  }
+
+  .slide-left-margin {
+    margin-right: -50vw;
+    transition: all 1.75s $easeinout2;
+  }
+
+  .slide-right-margin {
+    margin-left: -50vw;
+    transition: all 1.75s $easeinout2;
+  }
+
+  .scale-up {
+    transform: scale(0.9);
+  }
+
+  .scale-down {
+    transform: scale(1.2);
+  }
+
+  .scale-left {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  .scale-right {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .anim-slide-up,
+  .anim-slide-down,
+  .anim-slide-left,
+  .anim-slide-right,
+  .anim-scale-up,
+  .anim-scale-down {
+    opacity: 1 !important;
+    transform: translate(0, 0) scale(1);
+  }
+
+  .anim-scale-left,
+  .anim-scale-right {
+    transform: scaleX(1);
+  }
+
+  .anim-slide-left-margin,
+  .anim-slide-right-margin {
+    opacity: 1 !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,74 @@
+/* -------------------------------
+   BG WHITE COMPONENT
+   --
+   Mobile First !
+------------------------------- */
+
+.cbo-bgwhite {
+  position:relative;
+  transform: translateZ(1px);
+
+  &:before{
+    content:'';
+    display: block;
+    position: absolute;
+    top: -2.5rem;
+    bottom: -2.5rem;
+    left: 0;
+    right:0;
+    background:$colorwhite;
+    z-index: -1;
+  }
+}
+
+main .cbo-bgwhite:last-child{
+  &:before{
+    bottom:-5rem;
+  }
+}
+
+/* -------------------------------
+   SMALL SCREENS
+------------------------------- */
+
+@media (min-width: $screen-sm-min) {
+  .cbo-bgwhite {
+  }
+}
+
+/* -------------------------------
+   MEDIUM SCREENS
+------------------------------- */
+
+@media (min-width: $screen-md-min) {
+  .cbo-bgwhite {
+    &:before{
+      top:-5rem;
+      bottom:-5rem;
+    }
+  }
+
+  main .cbo-bgwhite:last-child{
+    &:before{
+      bottom:-10rem;
+    }
+  }
+}
+
+/* -------------------------------
+   LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-lg-min) {
+  .cbo-bgwhite {
+  }
+}
+
+/* -------------------------------
+   EXTRA LARGE SCREENS
+------------------------------- */
+
+@media (min-width: $screen-xl-min) {
+  .cbo-bgwhite {
+  }
+}
